@@ -1,0 +1,1009 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Hassan — Founder, ZapLock & Startup Mentor</title>
+<meta name="description" content="Hassan, founder of ZapLock, mentors early-stage founders across Pakistan. Book a free call, browse resources, and join a free community of opportunities.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&family=DM+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#082052;
+    --cream:#F8F0E5;
+    --navy-line: rgba(248,240,229,0.14);
+    --cream-line: rgba(8,32,82,0.12);
+    --navy-line-strong: rgba(248,240,229,0.28);
+    --cream-line-strong: rgba(8,32,82,0.24);
+    --maxw: 1180px;
+    --radius: 18px;
+  }
+  *,*::before,*::after{ box-sizing:border-box; margin:0; padding:0; -webkit-tap-highlight-color:transparent; }
+  html{ scroll-behavior:smooth; }
+  body{
+    font-family:'DM Sans', sans-serif;
+    background:var(--cream);
+    color:var(--navy);
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+    overflow-x:hidden;
+    touch-action:manipulation;
+  }
+  img{ max-width:100%; display:block; }
+  a{ color:inherit; text-decoration:none; }
+  ul{ list-style:none; }
+  section{ position:relative; }
+  .wrap{ max-width:var(--maxw); margin:0 auto; padding:0 32px; }
+  .bg-navy{ background:var(--navy); color:var(--cream); }
+  .bg-cream{ background:var(--cream); color:var(--navy); }
+
+  h1,h2,h3{ font-family:'Playfair Display', serif; font-weight:600; letter-spacing:-0.01em; }
+  .eyebrow{
+    font-family:'JetBrains Mono', monospace;
+    font-size:12px;
+    letter-spacing:0.14em;
+    text-transform:uppercase;
+    opacity:0.75;
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    margin-bottom:18px;
+  }
+  .eyebrow::before{
+    content:""; width:7px; height:7px; border-radius:50%;
+    background:currentColor; display:inline-block;
+  }
+
+  /* ---------- Buttons ---------- */
+  .btn{
+    display:inline-flex; align-items:center; justify-content:center; gap:10px;
+    font-family:'DM Sans', sans-serif; font-weight:600; font-size:15px;
+    padding:15px 28px; border-radius:999px; min-height:48px;
+    cursor:pointer; transition:transform .25s ease, box-shadow .25s ease, background .25s ease, color .25s ease;
+    white-space:nowrap; border:1px solid transparent;
+  }
+  .btn:hover{ transform:translateY(-2px); }
+  .btn:active{ transform:translateY(0) scale(0.98); }
+  .on-navy .btn-solid{ background:var(--cream); color:var(--navy); }
+  .on-navy .btn-solid:hover{ box-shadow:0 10px 28px rgba(248,240,229,0.22); }
+  .on-navy .btn-ghost{ border-color:var(--navy-line-strong); color:var(--cream); }
+  .on-navy .btn-ghost:hover{ background:var(--navy-line); }
+  .on-cream .btn-solid{ background:var(--navy); color:var(--cream); }
+  .on-cream .btn-solid:hover{ box-shadow:0 10px 28px rgba(8,32,82,0.18); }
+  .on-cream .btn-ghost{ border-color:var(--cream-line-strong); color:var(--navy); }
+  .on-cream .btn-ghost:hover{ background:var(--cream-line); }
+  .btn-small{ padding:11px 20px; font-size:13px; min-height:40px; }
+  .btn-highlight{
+    font-size:16px; padding:18px 34px;
+    box-shadow:0 0 0 1px rgba(248,240,229,0.25), 0 20px 50px rgba(0,0,0,0.35), 0 0 60px rgba(248,240,229,0.16);
+    transition:transform .25s ease, box-shadow .25s ease;
+  }
+  .btn-highlight:hover{
+    box-shadow:0 0 0 1px rgba(248,240,229,0.4), 0 24px 58px rgba(0,0,0,0.42), 0 0 70px rgba(248,240,229,0.24);
+  }
+
+  /* ---------- Nav ---------- */
+  header.site-nav{
+    position:sticky; top:0; z-index:100;
+    background:rgba(8,32,82,0.94);
+    backdrop-filter:blur(12px);
+    color:var(--cream);
+    border-bottom:1px solid var(--navy-line);
+  }
+  .nav-inner{
+    max-width:var(--maxw); margin:0 auto; padding:16px 32px;
+    display:flex; align-items:center; justify-content:space-between;
+  }
+  .logo{
+    font-family:'Playfair Display', serif; font-style:italic; font-weight:500;
+    font-size:23px; letter-spacing:0.01em;
+  }
+  .logo span{ opacity:0.65; font-style:normal; font-family:'JetBrains Mono',monospace; font-size:10.5px; display:block; letter-spacing:0.12em; text-transform:uppercase; margin-top:3px;}
+  nav.links{ display:flex; align-items:center; gap:26px; }
+  nav.links a{
+    font-family:'DM Sans', sans-serif;
+    font-size:13.5px; font-weight:600; opacity:0.82;
+    transition:opacity .2s ease;
+    position:relative;
+  }
+  nav.links a:hover{ opacity:1; }
+  nav.links a::after{
+    content:""; position:absolute; left:0; bottom:-6px; width:0; height:1px;
+    background:var(--cream); transition:width .25s ease;
+  }
+  nav.links a:hover::after{ width:100%; }
+  .nav-cta{ display:flex; align-items:center; gap:18px; }
+  .burger{ display:none; flex-direction:column; gap:5px; cursor:pointer; background:none; border:none; padding:8px; }
+  .burger span{ width:22px; height:2px; background:var(--cream); display:block; transition:transform .25s ease, opacity .25s ease; }
+
+  /* ---------- Hero ---------- */
+  .hero{ padding:88px 0 0; overflow:hidden; }
+  .hero::before, .hero::after{
+    content:""; position:absolute; border-radius:50%; filter:blur(70px); pointer-events:none; z-index:0;
+  }
+  .hero::before{
+    width:480px; height:480px; top:-140px; right:-100px;
+    background:radial-gradient(circle, rgba(248,240,229,0.20), transparent 70%);
+    animation:drift1 16s ease-in-out infinite alternate;
+  }
+  .hero::after{
+    width:380px; height:380px; bottom:-120px; left:-80px;
+    background:radial-gradient(circle, rgba(248,240,229,0.12), transparent 70%);
+    animation:drift2 20s ease-in-out infinite alternate;
+  }
+  @keyframes drift1{ from{ transform:translate(0,0) scale(1); } to{ transform:translate(-40px,50px) scale(1.1); } }
+  @keyframes drift2{ from{ transform:translate(0,0) scale(1); } to{ transform:translate(30px,-30px) scale(1.06); } }
+
+  .hero-inner{
+    position:relative; z-index:1;
+    display:grid; grid-template-columns:1.05fr 0.95fr; gap:48px; align-items:center;
+    padding-bottom:90px;
+  }
+  .hero-text h1{ font-size:clamp(38px, 5vw, 62px); line-height:1.08; margin-bottom:24px; }
+  .hero-text h1 em{ font-style:italic; font-weight:500; opacity:0.88; }
+  .hero-sub{ font-size:17px; max-width:460px; opacity:0.84; margin-bottom:36px; }
+  .hero-ctas{ display:flex; gap:14px; flex-wrap:wrap; }
+
+  .hero-visual{ position:relative; display:flex; justify-content:center; align-items:center; min-height:460px; }
+  .portrait-glow{
+    position:absolute; width:380px; height:460px; border-radius:32px;
+    background:radial-gradient(circle at 30% 20%, rgba(248,240,229,0.16), transparent 65%);
+    filter:blur(36px); z-index:0;
+  }
+  .portrait-card{
+    position:relative; z-index:1; width:min(320px, 78vw);
+    border-radius:26px; overflow:hidden;
+    box-shadow:0 30px 70px rgba(0,0,0,0.38);
+    border:1px solid var(--navy-line-strong);
+  }
+  .portrait-frame{
+    width:100%; height:min(360px, 50vh);
+    background:linear-gradient(160deg, rgba(248,240,229,0.07), rgba(248,240,229,0.01));
+    overflow:hidden; position:relative;
+  }
+  .portrait-frame img{ width:100%; height:100%; object-fit:cover; }
+  .portrait-placeholder{
+    width:100%; height:100%; display:flex; flex-direction:column; align-items:center; justify-content:center;
+    background:repeating-linear-gradient(135deg, rgba(248,240,229,0.05) 0 2px, transparent 2px 14px);
+  }
+  .portrait-placeholder .mono{
+    font-family:'Playfair Display', serif; font-style:italic; font-weight:500; font-size:96px; color:var(--cream); opacity:0.92;
+  }
+  .portrait-placeholder small{
+    font-family:'JetBrains Mono', monospace; font-size:10.5px; letter-spacing:0.1em; text-transform:uppercase;
+    opacity:0.45; margin-top:10px;
+  }
+  .portrait-plate{
+    background:var(--cream); color:var(--navy);
+    padding:20px 24px 22px; text-align:center; position:relative;
+  }
+  .portrait-plate::before{
+    content:""; position:absolute; top:0; left:50%; transform:translateX(-50%);
+    width:32px; height:2px; background:var(--navy); opacity:0.22;
+  }
+  .portrait-plate .np-name{
+    display:block; font-family:'Playfair Display', serif; font-weight:600; font-size:19px;
+    line-height:1.2; margin-top:12px; letter-spacing:-0.01em;
+  }
+  .portrait-plate .np-title{
+    display:block; font-family:'JetBrains Mono', monospace; font-size:10.5px;
+    letter-spacing:0.08em; text-transform:uppercase; opacity:0.6; margin-top:6px;
+  }
+
+  /* hero load-in */
+  .hero-text > *{ opacity:0; transform:translateY(18px); animation:riseIn .8s ease forwards; }
+  .hero-text .eyebrow{ animation-delay:.05s; }
+  .hero-text h1{ animation-delay:.15s; }
+  .hero-text .hero-sub{ animation-delay:.3s; }
+  .hero-text .hero-ctas{ animation-delay:.45s; }
+  .hero-visual{ opacity:0; transform:scale(0.96); animation:scaleIn .9s ease .25s forwards; }
+  @keyframes riseIn{ to{ opacity:1; transform:translateY(0); } }
+  @keyframes scaleIn{ to{ opacity:1; transform:scale(1); } }
+
+  /* ---------- Ticker ---------- */
+  .ticker{ overflow:hidden; border-top:1px solid var(--cream-line); border-bottom:1px solid var(--cream-line); padding:18px 0; position:relative; z-index:1; }
+  .ticker-track{ display:flex; width:max-content; gap:0; animation:marquee 28s linear infinite; }
+  .ticker-item{
+    display:flex; align-items:center; gap:14px; padding:0 36px;
+    font-family:'JetBrains Mono', monospace; font-size:13px; letter-spacing:0.02em; white-space:nowrap;
+  }
+  .ticker-item .dot{ width:5px; height:5px; border-radius:50%; background:var(--navy); opacity:0.4; }
+  @keyframes marquee{ from{ transform:translateX(0); } to{ transform:translateX(-50%); } }
+
+  /* ---------- Generic section spacing ---------- */
+  .section{ padding:120px 0; }
+  .section-head{ max-width:640px; margin-bottom:60px; }
+  .section-head h2{ font-size:clamp(30px, 3.6vw, 44px); margin-top:10px; line-height:1.14; }
+  .section-head p{ opacity:0.82; font-size:16px; margin-top:16px; max-width:520px; }
+
+  .reveal{ opacity:0; transform:translateY(28px); transition:opacity .7s ease, transform .7s ease; }
+  .reveal.is-visible{ opacity:1; transform:translateY(0); }
+
+  /* ---------- ZapLock section ---------- */
+  .zaplock-grid{ display:grid; grid-template-columns:1fr 1fr; gap:56px; align-items:center; margin-bottom:56px; }
+  .zaplock-text p{ margin-bottom:16px; font-size:16px; opacity:0.86; }
+  .image-card{ border-radius:20px; overflow:hidden; transition:transform .4s ease, box-shadow .4s ease; }
+  .image-card:hover{ transform:translateY(-4px); box-shadow:0 26px 56px rgba(8,32,82,0.16); }
+  .image-placeholder{
+    aspect-ratio:16/10; border-radius:20px; border:1px dashed var(--cream-line-strong);
+    display:flex; align-items:center; justify-content:center; text-align:center; padding:24px;
+    background:rgba(8,32,82,0.03);
+    font-family:'JetBrains Mono', monospace; font-size:11.5px; letter-spacing:0.03em; opacity:0.55;
+  }
+  .video-frame{
+    position:relative; width:100%; max-width:1100px; margin:32px auto 0; padding-top:56.25%; border-radius:18px; overflow:hidden;
+    box-shadow:0 24px 56px rgba(8,32,82,0.16);
+  }
+  .video-frame iframe{ position:absolute; inset:0; width:100%; height:100%; border:0; }
+  .video-label{ text-align:center; margin-bottom:18px; }
+
+  /* ---------- About ---------- */
+  .about-grid{ display:grid; grid-template-columns:0.9fr 1.1fr; gap:64px; align-items:start; }
+  .about-intro h2{ font-size:clamp(26px, 3.2vw, 38px); line-height:1.28; }
+  .about-intro h2 .line2{ display:block; font-style:italic; opacity:0.82; font-size:0.92em; margin-top:6px; }
+  .about-body p{ margin-bottom:18px; font-size:16.5px; opacity:0.88; max-width:560px; }
+
+  /* ---------- Achievements ---------- */
+  .stat-grid{ display:grid; grid-template-columns:repeat(3, 1fr); gap:1px; background:var(--navy-line); border:1px solid var(--navy-line); border-radius:var(--radius); overflow:hidden; margin-bottom:72px; }
+  .stat-cell{ position:relative; background:var(--navy); padding:38px 30px; transition:background .3s ease, transform .3s ease; }
+  .stat-cell::before{ content:""; position:absolute; top:0; left:0; right:0; height:3px; background:var(--cream); opacity:0; transition:opacity .3s ease; }
+  .stat-cell:hover{ background:rgba(248,240,229,0.045); transform:translateY(-5px); }
+  .stat-cell:hover::before{ opacity:0.85; }
+  .stat-num{ font-family:'Playfair Display', serif; font-weight:600; font-size:46px; margin-bottom:8px; letter-spacing:-0.01em; }
+  .stat-label{ font-family:'JetBrains Mono', monospace; font-size:11.5px; font-weight:500; letter-spacing:0.06em; text-transform:uppercase; opacity:0.62; }
+
+  .achieve-list{ display:flex; flex-direction:column; gap:0; border-top:1px solid var(--navy-line); }
+  .achieve-row{
+    display:grid; grid-template-columns:200px 1fr; gap:32px; align-items:flex-start;
+    padding:32px 22px; margin:0 -22px; border-bottom:1px solid var(--navy-line);
+    border-radius:16px; transition:background .3s ease, transform .3s ease;
+  }
+  .achieve-row:hover{ background:rgba(248,240,229,0.04); transform:translateX(6px); }
+  .achieve-meta{ display:flex; flex-direction:column; gap:14px; align-items:flex-start; }
+  .achieve-icon{
+    width:44px; height:44px; border-radius:13px; flex-shrink:0;
+    background:rgba(248,240,229,0.08); border:1px solid var(--navy-line-strong);
+    display:flex; align-items:center; justify-content:center;
+    transition:background .3s ease, transform .3s ease;
+  }
+  .achieve-row:hover .achieve-icon{ background:var(--cream); transform:scale(1.06); }
+  .achieve-row:hover .achieve-icon svg{ stroke:var(--navy); }
+  .achieve-row .tag{ font-family:'JetBrains Mono', monospace; font-size:12px; letter-spacing:0.05em; text-transform:uppercase; opacity:0.6; }
+  .achieve-row h3{ font-size:20px; font-weight:600; margin-bottom:8px; }
+  .achieve-row p{ opacity:0.82; font-size:15px; max-width:560px; }
+
+  /* ---------- Gallery (achievements carousel) ---------- */
+  .gallery{ margin-top:72px; }
+  .gallery-title{ font-family:'Playfair Display', serif; font-size:28px; margin-bottom:28px; }
+  .gallery-frame{
+    position:relative; border-radius:18px; overflow:hidden; border:1px solid var(--navy-line);
+    background:var(--navy); max-width:620px; margin:0 auto;
+  }
+  .gallery-track{ position:relative; aspect-ratio:4/3; }
+  .gallery-slide{ position:absolute; inset:0; opacity:0; transition:opacity .5s ease; display:flex; flex-direction:column; pointer-events:none; }
+  .gallery-slide.active{ opacity:1; pointer-events:auto; }
+  .gallery-img{ flex:1; min-height:0; width:100%; object-fit:contain; background:var(--navy); }
+  .gallery-caption{ padding:14px 20px; font-size:13.5px; opacity:0.85; background:rgba(0,0,0,0.22); flex-shrink:0; }
+  .gallery-btn{
+    position:absolute; top:50%; transform:translateY(-50%); width:40px; height:40px; border-radius:50%;
+    background:rgba(248,240,229,0.12); border:1px solid var(--navy-line-strong); color:var(--cream);
+    font-size:19px; line-height:1; cursor:pointer; display:flex; align-items:center; justify-content:center;
+    transition:background .2s ease;
+  }
+  .gallery-btn:hover{ background:rgba(248,240,229,0.24); }
+  .gallery-btn.prev{ left:12px; } .gallery-btn.next{ right:12px; }
+  .gallery-counter{
+    position:absolute; bottom:12px; right:12px; font-family:'JetBrains Mono', monospace; font-size:10.5px;
+    background:rgba(0,0,0,0.32); padding:5px 10px; border-radius:999px;
+  }
+
+  /* ---------- Mentorship ---------- */
+  .tier-grid{ display:grid; grid-template-columns:1fr 1fr; gap:28px; }
+  .tier-card{
+    border:1px solid var(--cream-line-strong); border-radius:var(--radius); padding:36px;
+    background:rgba(8,32,82,0.025);
+    display:flex; flex-direction:column; gap:18px;
+    transition:transform .3s ease, box-shadow .3s ease;
+  }
+  .tier-card:hover{ transform:translateY(-6px); box-shadow:0 24px 48px rgba(8,32,82,0.12); }
+  .tier-card.featured{ background:var(--navy); color:var(--cream); border-color:var(--navy); }
+  .tier-top{ display:flex; justify-content:space-between; align-items:flex-start; }
+  .tier-name{ font-family:'JetBrains Mono', monospace; font-size:12px; letter-spacing:0.08em; text-transform:uppercase; opacity:0.65; }
+  .tier-price{ font-family:'Playfair Display', serif; font-weight:600; font-size:34px; }
+  .tier-price small{ font-family:'DM Sans',sans-serif; font-size:13px; font-weight:500; opacity:0.6; display:block; margin-top:2px;}
+  .tier-card ul{ display:flex; flex-direction:column; gap:10px; font-size:14.5px; opacity:0.86; }
+  .tier-card ul li{ padding-left:18px; position:relative; }
+  .tier-card ul li::before{ content:"—"; position:absolute; left:0; opacity:0.5; }
+
+  /* ---------- Resources ---------- */
+  .bundle-card{
+    border:1px solid var(--navy-line-strong); border-radius:var(--radius); padding:40px;
+    display:grid; grid-template-columns:1fr auto; gap:24px; align-items:center;
+    margin-bottom:40px; background:rgba(248,240,229,0.03);
+    transition:transform .3s ease, border-color .3s ease;
+  }
+  .bundle-card:hover{ transform:translateY(-3px); border-color:var(--cream); }
+  .bundle-card h3{ font-size:24px; margin-bottom:10px; font-weight:500; }
+  .bundle-card p{ opacity:0.78; font-size:15px; max-width:420px; }
+  .res-grid{ display:grid; grid-template-columns:repeat(3, 1fr); gap:24px; }
+  .res-card{
+    border:1px solid var(--navy-line); border-radius:14px; padding:26px;
+    display:flex; flex-direction:column; gap:14px; min-height:200px;
+    transition:transform .3s ease, border-color .3s ease, background .3s ease;
+  }
+  .res-card:hover{ transform:translateY(-5px); border-color:var(--navy-line-strong); background:rgba(248,240,229,0.04); }
+  .res-card h4{ font-family:'Playfair Display', serif; font-size:19px; font-weight:500; }
+  .res-card p{ font-size:14px; opacity:0.75; flex-grow:1; }
+  .pill{
+    align-self:flex-start; font-family:'JetBrains Mono', monospace; font-size:10.5px;
+    letter-spacing:0.05em; text-transform:uppercase; padding:5px 11px; border-radius:999px;
+    border:1px solid var(--navy-line-strong); opacity:0.7;
+  }
+
+  /* ---------- Community ---------- */
+  .community-card{
+    border-radius:24px; padding:56px; display:grid; grid-template-columns:1.2fr 0.8fr; gap:40px; align-items:center;
+    background:var(--navy); color:var(--cream);
+  }
+  .community-card h2{ font-size:clamp(26px,3vw,36px); margin-bottom:16px; }
+  .community-card p{ opacity:0.84; font-size:15.5px; max-width:440px; }
+  .wa-icon{ width:64px; height:64px; border-radius:50%; background:rgba(248,240,229,0.1); display:flex; align-items:center; justify-content:center; margin-bottom:22px; }
+  .opp-preview{ display:flex; flex-direction:column; gap:14px; }
+  .opp-row{ border:1px solid var(--cream-line); border-radius:14px; padding:18px 20px; display:flex; flex-direction:column; gap:5px; color:var(--navy); background:var(--cream); }
+  .opp-row .opp-title{ font-size:14.5px; font-weight:700; }
+  .opp-row .opp-sub{ font-size:12.5px; opacity:0.62; line-height:1.45; }
+
+  /* ---------- Speaking ---------- */
+  .topics-grid{ display:grid; grid-template-columns:repeat(2,1fr); gap:18px; margin-top:48px; }
+  .topic-row{ border-top:1px solid var(--navy-line); padding:20px 0; font-size:16px; font-weight:600; display:flex; align-items:center; gap:14px; }
+  .topic-row .n{ font-family:'JetBrains Mono', monospace; font-size:12px; opacity:0.5; font-weight:400; }
+
+  /* ---------- Blog ---------- */
+  .blog-stub{ border:1px dashed var(--cream-line-strong); border-radius:var(--radius); padding:56px; text-align:center; }
+  .blog-stub h3{ font-size:24px; margin-bottom:14px; font-weight:500; }
+  .blog-stub p{ opacity:0.75; max-width:440px; margin:0 auto; }
+
+  /* ---------- Contact ---------- */
+  .contact-grid{ display:grid; grid-template-columns:1fr 1fr; gap:64px; }
+  .field{ margin-bottom:18px; }
+  .field label{ display:block; font-family:'JetBrains Mono', monospace; font-size:11px; letter-spacing:0.06em; text-transform:uppercase; opacity:0.6; margin-bottom:8px; }
+  .field input, .field select, .field textarea{
+    width:100%; background:transparent; border:1px solid var(--navy-line-strong); border-radius:10px;
+    padding:14px; color:var(--cream); font-family:'DM Sans',sans-serif; font-size:14.5px;
+  }
+  .field select{
+    appearance:none; -webkit-appearance:none; -moz-appearance:none;
+    background-color:var(--navy);
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23F8F0E5' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+    background-repeat:no-repeat; background-position:right 14px center; background-size:14px;
+    padding-right:42px; cursor:pointer;
+  }
+  .field select option{ background-color:var(--navy); color:var(--cream); padding:10px; }
+  .field input:focus, .field select:focus, .field textarea:focus{
+    outline:none; border-color:var(--cream); background-color:rgba(248,240,229,0.05);
+  }
+  .field select:focus{ background-color:var(--navy); }
+  .field textarea{ resize:vertical; min-height:110px; }
+  .field input::placeholder, .field textarea::placeholder{ color:rgba(248,240,229,0.4); }
+  .form-msg{ display:none; padding:14px 16px; border-radius:10px; font-size:14px; margin-bottom:18px; }
+  .form-msg.success{ background:rgba(248,240,229,0.12); border:1px solid var(--navy-line-strong); }
+  .form-msg.error{ background:rgba(255,120,120,0.1); border:1px solid rgba(255,120,120,0.3); }
+  .form-msg.show{ display:block; }
+
+  .contact-direct{ display:flex; flex-direction:column; gap:22px; }
+  .contact-direct a{ display:flex; align-items:center; gap:12px; font-size:15px; padding-bottom:14px; border-bottom:1px solid var(--navy-line); transition:opacity .2s; }
+  .contact-direct a:hover{ opacity:0.7; }
+
+  .connect-title{ font-family:'JetBrains Mono', monospace; font-size:11.5px; letter-spacing:0.08em; text-transform:uppercase; opacity:0.65; margin:36px 0 16px; }
+  .connect-list{ display:flex; flex-direction:column; gap:12px; }
+  .connect-card{
+    display:flex; align-items:center; gap:16px; padding:16px 18px;
+    border:1px solid var(--navy-line-strong); border-radius:16px;
+    transition:transform .25s ease, background .25s ease, border-color .25s ease;
+  }
+  .connect-card:hover{ transform:translateX(6px); background:rgba(248,240,229,0.07); border-color:var(--cream); }
+  .connect-card .icon{
+    width:52px; height:52px; border-radius:50%; flex-shrink:0;
+    background:rgba(248,240,229,0.1); display:flex; align-items:center; justify-content:center;
+    transition:background .25s ease, color .25s ease;
+  }
+  .connect-card:hover .icon{ background:var(--cream); color:var(--navy); }
+  .connect-card .meta{ display:flex; flex-direction:column; gap:2px; min-width:0; }
+  .connect-card .platform{ font-size:15.5px; font-weight:700; }
+  .connect-card .handle{ font-family:'JetBrains Mono', monospace; font-size:12px; opacity:0.6; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+  .connect-card .arrow{ margin-left:auto; font-size:18px; opacity:0.4; transition:transform .25s ease, opacity .25s ease; flex-shrink:0; }
+  .connect-card:hover .arrow{ transform:translateX(4px); opacity:1; }
+
+  /* ---------- Footer ---------- */
+  footer{ padding:36px 0; border-top:1px solid var(--cream-line); }
+  .footer-inner{ display:flex; justify-content:space-between; align-items:center; font-size:13px; opacity:0.65; flex-wrap:wrap; gap:12px; }
+
+  @media (prefers-reduced-motion: reduce){
+    *{ animation-duration:0.01ms !important; animation-iteration-count:1 !important; transition-duration:0.01ms !important; }
+  }
+
+  /* ---------- Responsive ---------- */
+  @media (max-width:980px){
+    nav.links{ display:none; }
+    nav.links.mobile-open{
+      display:flex; flex-direction:column; gap:0;
+      position:absolute; top:100%; left:0; right:0;
+      background:var(--navy); padding:8px 32px 20px;
+      border-bottom:1px solid var(--navy-line);
+    }
+    nav.links.mobile-open a{ padding:14px 0; border-bottom:1px solid var(--navy-line); }
+    .burger{ display:flex; }
+    .hero-inner{ grid-template-columns:1fr; padding-top:20px; }
+    .hero-visual{ order:-1; min-height:360px; }
+    .about-grid, .contact-grid, .zaplock-grid{ grid-template-columns:1fr; gap:32px; }
+    .stat-grid{ grid-template-columns:1fr; }
+    .achieve-row{ grid-template-columns:1fr; gap:16px; }
+    .tier-grid, .res-grid, .topics-grid{ grid-template-columns:1fr; }
+    .community-card{ grid-template-columns:1fr; padding:36px; }
+    .bundle-card{ grid-template-columns:1fr; text-align:left; }
+    .section{ padding:76px 0; }
+  }
+  @media (max-width:480px){
+    .wrap{ padding:0 20px; }
+    .nav-inner{ padding:14px 20px; }
+    .section{ padding:60px 0; }
+    .section-head{ margin-bottom:40px; }
+    .btn{ width:100%; }
+    .hero-ctas{ flex-direction:column; }
+    .hero-ctas .btn{ width:100%; }
+    .gallery-btn{ width:38px; height:38px; font-size:17px; }
+    .community-card{ padding:26px; }
+    .tier-card, .res-card{ padding:24px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="site-nav">
+  <div class="nav-inner">
+    <a href="#" class="logo">Hassan<span>Founder, ZapLock</span></a>
+    <nav class="links" id="navLinks">
+      <a href="#about">About</a>
+      <a href="#achievements">Achievements</a>
+      <a href="#mentorship">Mentorship</a>
+      <a href="#resources">Resources</a>
+      <a href="#community">Community</a>
+      <a href="#speaking">Speaking</a>
+      <a href="#blog">Blog</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="nav-cta">
+      <a class="btn btn-solid btn-small" href="https://chat.whatsapp.com/E5XU9qSFx0BIbHXU8HlhJ6" target="_blank" rel="noopener">Join the Community</a>
+      <button class="burger" aria-label="Open menu" id="burgerBtn">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ================= HERO ================= -->
+<section class="hero bg-navy on-navy">
+  <div class="wrap hero-inner">
+    <div class="hero-text">
+      <p class="eyebrow">Founder, ZapLock — Mentor to 150+ founders</p>
+      <h1>Building ZapLock.<br><em>Helping you build yours.</em></h1>
+      <p class="hero-sub">I'm Hassan. Over the last two years I've competed in 15+ startup competitions, secured seed funding, and mentored 150+ founders across Pakistan, while building ZapLock from scratch. This is where that experience becomes useful to you.</p>
+      <div class="hero-ctas">
+        <a class="btn btn-solid" href="https://cal.com/muhammad-hassan-sqb3gb/one-on-one-founder-session" target="_blank" rel="noopener">Book a free call</a>
+        <a class="btn btn-ghost" href="#about">See my story →</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="portrait-glow"></div>
+      <div class="portrait-card">
+        <div class="portrait-frame">
+          <!-- Replace this placeholder div with: <img src="your-photo.jpg" alt="Hassan, Founder of ZapLock"> -->
+          <img src="images/profile.jpg" alt="Hassan, Founder of ZapLock">
+        </div>
+        <div class="portrait-plate">
+          <span class="np-name">Muhammad Hassan</span>
+          <span class="np-title">Founder &amp; CEO — ZapLock</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ticker bg-cream on-cream">
+    <div class="ticker-track" id="tickerTrack"></div>
+  </div>
+</section>
+
+<!-- ================= WHAT IS ZAPLOCK ================= -->
+<section id="zaplock" class="section bg-cream on-cream">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="eyebrow">The product</p>
+      <h2>What is ZapLock about?</h2>
+    </div>
+
+    <div class="zaplock-grid reveal">
+      <div class="zaplock-text">
+        <p>ZapLock is smart locker infrastructure — RFID-enabled lockers built for universities, gyms, co-working spaces, and other shared venues across Pakistan.</p>
+        <p>The problem is simple and everywhere: shared spaces have no secure, self-serve way to store belongings. People are stuck relying on staffed counters, makeshift storage, or just not storing things at all.</p>
+        <p>ZapLock serves venue owners who want to offer secure storage without adding staff overhead, and the students, gym members, and professionals who use that space every day.</p>
+        <p>The impact is straightforward; venues unlock a new amenity and a new revenue line, and people get their time and trust back.</p>
+        <a class="btn btn-solid" href="#contact">Learn more about ZapLock</a>
+      </div>
+      <div class="image-card">
+        <!-- Placeholder: replace with a landscape image of ZapLock lockers -->
+        <img src="images/zaplock-lockers.jpg" alt="ZapLock smart lockers" style="width:100%;height:100%;object-fit:cover;border-radius:20px;">
+      </div>
+    </div>
+
+    <div class="reveal">
+      <p class="video-label eyebrow" style="justify-content:center;">Watch — the 60 second overview</p>
+      <div class="video-frame">
+        <!-- YouTube embed -->
+        <iframe src="https://www.youtube.com/embed/xl7xgseN7zs" title="What is ZapLock" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ABOUT ================= -->
+<section id="about" class="section bg-cream on-cream">
+  <div class="wrap">
+    <div class="about-grid">
+      <div class="reveal about-intro">
+        <p class="eyebrow">About</p>
+        <h2>I'm not here because I have all the answers.<span class="line2">I'm here because I've asked all the wrong questions first.</span></h2>
+      </div>
+      <div class="reveal about-body">
+        <p>Two years ago I was exactly where a lot of the people I now mentor are standing; an idea, a lot of conviction, and almost no idea how the ecosystem actually worked. What changed wasn't a single breakthrough. It was reps. Fifteen-plus competitions taught me how to defend an idea under pressure. Building ZapLock, smart locker infrastructure now live across universities, gyms, and co-working spaces in Pakistan, taught me how wide the gap is between a good pitch and a good business, and that it's worth closing anyway.</p>
+        <p>Getting into ICF, the Bahria Incubation Center, and most recently the top 20 of 400+ applicants at Accelerate Punjab taught me what evaluators actually look for, because I've sat across from enough of them to see the pattern.</p>
+        <p>Somewhere past the hundredth mentoring conversation, I realized this wasn't a side effect of building ZapLock, it had become a parallel mission I genuinely cared about. I'm still building ZapLock every day. That's not a disclaimer, it's the reason anything I tell you is worth listening to. I'm not coaching from memory — I'm in it, right now, alongside you.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ACHIEVEMENTS ================= -->
+<section id="achievements" class="section bg-navy on-navy">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="eyebrow">Achievements</p>
+      <h2>The proof, laid out.</h2>
+      <p>Not to impress you — to show this advice is earned, not borrowed.</p>
+    </div>
+
+    <div class="stat-grid reveal">
+      <div class="stat-cell"><div class="stat-num" data-count="15" data-suffix="+">0</div><div class="stat-label">Competitions entered</div></div>
+      <div class="stat-cell"><div class="stat-num" data-count="10" data-suffix="+">0</div><div class="stat-label">Top positions</div></div>
+      <div class="stat-cell"><div class="stat-num" data-count="150" data-suffix="+">0</div><div class="stat-label">Ideas mentored</div></div>
+    </div>
+
+    <div class="achieve-list reveal">
+      <div class="achieve-row">
+        <div class="achieve-meta">
+          <div class="achieve-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="12" r="9"/><path d="M12 7v10M9 9.5c0-1.4 1.3-2.5 3-2.5s3 .8 3 2c0 2.5-6 1.5-6 4 0 1.2 1.3 2 3 2s3-1.1 3-2.5"/></svg></div>
+          <div class="tag">Funding</div>
+        </div>
+        <div><h3>Rs 1,000,000 seed grant</h3><p>Secured a seed funding grant for ZapLock, proof of concept that outside evaluators were willing to back, not just encouraging words.</p></div>
+      </div>
+      <div class="achieve-row">
+        <div class="achieve-meta">
+          <div class="achieve-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M5 19 19 5M19 5h-6M19 5v6"/></svg></div>
+          <div class="tag">Acceleration</div>
+        </div>
+        <div><h3>ICF — Innovation Challenge Futuremakers</h3><p>Partnered with ICF for an acceleration program, sharpening ZapLock's go-to-market and validating the model against experienced mentors.</p></div>
+      </div>
+      <div class="achieve-row">
+        <div class="achieve-meta">
+          <div class="achieve-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 21c4-2 7-5.5 7-10a7 7 0 0 0-14 0c0 4.5 3 8 7 10Z"/><circle cx="12" cy="11" r="2.5"/></svg></div>
+          <div class="tag">Incubation</div>
+        </div>
+        <div><h3>Bahria Incubation Center</h3><p>Brought into Bahria's incubation program, then invited back as a mentor for their startup hackathon, working directly with 10+ early-stage teams.</p></div>
+      </div>
+      <div class="achieve-row">
+        <div class="achieve-meta">
+          <div class="achieve-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M8 21h8M12 17v4M7 4h10v4a5 5 0 0 1-10 0V4Z"/><path d="M7 6H4a3 3 0 0 0 3 3M17 6h3a3 3 0 0 1-3 3"/></svg></div>
+          <div class="tag">Top 20 / 400+</div>
+        </div>
+        <div><h3>Accelerate Punjab finalist</h3><p>Shortlisted into the top 20 finalists out of more than 400 applicants from across Pakistan, one of the country's most competitive incubation pipelines.</p></div>
+      </div>
+      <div class="achieve-row">
+        <div class="achieve-meta">
+          <div class="achieve-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 4 3 8l9 4 9-4-9-4Z"/><path d="M3 8v6c0 1.5 4 3.5 9 3.5s9-2 9-3.5V8"/></svg></div>
+          <div class="tag">Teaching</div>
+        </div>
+        <div><h3>80+ students, one session</h3><p>Invited by a university entrepreneurship professor to lead a session on startups. Several students later sought one-on-one mentorship, the clearest sign it landed.</p></div>
+      </div>
+    </div>
+
+    <div class="gallery reveal">
+      <p class="eyebrow">Moments</p>
+      <h3 class="gallery-title">In the room</h3>
+      <div class="gallery-frame">
+        <div class="gallery-track" id="galleryTrack">
+          <div class="gallery-slide active">
+            <img class="gallery-img" src="images/gallery-1.jpg" alt="Securing 1st Position at Hult Prize Campus Round.">
+            <p class="gallery-caption">Securing 1st Position at Hult Prize Campus Round.</p>
+          </div>
+          <div class="gallery-slide">
+            <img class="gallery-img" src="images/gallery-2.jpg" alt="Secured 1st Position at Shark Tank Campus Round.">
+            <p class="gallery-caption">Secured 1st Position at Shark Tank Campus Round.</p>
+          </div>
+          <div class="gallery-slide">
+            <img class="gallery-img" src="images/gallery-3.jpg" alt="ICF x Standard Chartered Seed Grant: PKR 400,000.">
+            <p class="gallery-caption">ICF x Standard Chartered Seed Grant: PKR 400,000.</p>
+          </div>
+          <div class="gallery-slide">
+            <img class="gallery-img" src="images/gallery-4.jpg" alt="ZapLock Qualifies for Nationals at Zindigi Prize 2024.">
+            <p class="gallery-caption">ZapLock Qualifies for Nationals at Zindigi Prize 2024.</p>
+          </div>
+          <div class="gallery-slide">
+            <img class="gallery-img" src="images/gallery-5.jpg" alt="Meeting with Chinese Delegation at Bahria Incubation Center.">
+            <p class="gallery-caption">Meeting with Chinese Delegation at Bahria Incubation Center.</p>
+          </div>
+          <div class="gallery-slide">
+            <img class="gallery-img" src="images/gallery-6.jpg" alt="ZapLock Secured 1st Position at Zindigi Prize Campus Round.">
+            <p class="gallery-caption">ZapLock Secured 1st Position at Zindigi Prize Campus Round.</p>
+          </div>
+          <div class="gallery-slide">
+            <img class="gallery-img" src="images/gallery-7.jpg" alt="Secured 1st Position at Hult Prize Campus Round '26.">
+            <p class="gallery-caption">Secured 1st Position at Hult Prize Campus Round '26.</p>
+          </div>
+        </div>
+        <button class="gallery-btn prev" aria-label="Previous photo" id="galleryPrev">‹</button>
+        <button class="gallery-btn next" aria-label="Next photo" id="galleryNext">›</button>
+        <div class="gallery-counter"><span id="galleryCount">1</span> / 7</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= MENTORSHIP ================= -->
+<section id="mentorship" class="section bg-cream on-cream">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="eyebrow">Mentorship</p>
+      <h2>Mentorship that's actually been tested.</h2>
+      <p>Not generic startup advice; feedback shaped by 150+ real conversations, competition rounds, and building ZapLock myself.</p>
+    </div>
+
+    <div class="tier-grid reveal">
+      <div class="tier-card">
+        <div class="tier-top">
+          <div>
+            <div class="tier-name">First session</div>
+            <div class="tier-price">Free</div>
+          </div>
+        </div>
+        <p style="opacity:.8; font-size:14.5px;">A no-pressure 20-minute conversation. Tell me what you're building and where you're stuck.</p>
+        <ul>
+          <li>20-minute video call</li>
+          <li>Honest, direct feedback</li>
+          <li>No pitch deck required</li>
+          <li>Short intake form before booking</li>
+        </ul>
+        <a class="btn btn-ghost" href="https://cal.com/muhammad-hassan-sqb3gb/one-on-one-founder-session" target="_blank" rel="noopener">Book the free call</a>
+      </div>
+
+      <div class="tier-card featured on-navy">
+        <div class="tier-top">
+          <div>
+            <div class="tier-name">Second session</div>
+            <div class="tier-price">PKR 2,000<small>60 minutes</small></div>
+          </div>
+        </div>
+        <p style="opacity:.84; font-size:14.5px;">A focused, deeper session once we already know where you need help.</p>
+        <ul>
+          <li>60-minute focused session</li>
+          <li>Pitch, fundraising, or GTM deep-dive</li>
+          <li>Concrete next steps, not just encouragement</li>
+          <li>Booked directly after your free call</li>
+        </ul>
+        <a class="btn btn-solid" href="https://cal.com/muhammad-hassan-sqb3gb/one-on-one-founder-session" target="_blank" rel="noopener">Book this session</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= RESOURCES ================= -->
+<section id="resources" class="section bg-navy on-navy">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="eyebrow">Resources</p>
+      <h2>What I wish someone had handed me on day one.</h2>
+      <p>Built from real competition rounds and real pitch reviews, not repackaged theory.</p>
+    </div>
+
+    <div class="bundle-card reveal">
+      <div>
+        <h3>The Startup Toolkit</h3>
+        <p>Pitch deck template, must-have startup documents, and a fundraising checklist; bundled at a better price than buying separately.</p>
+      </div>
+      <div style="text-align:right;">
+        <span class="pill" style="margin-bottom:10px; display:inline-block;">Coming soon</span><br>
+        <a class="btn btn-solid" href="#community">Get notified</a>
+      </div>
+    </div>
+
+    <div class="res-grid reveal">
+      <div class="res-card">
+        <span class="pill">PDF</span>
+        <h4>How to build a pitch deck that survives questions</h4>
+        <p>The structure I've used and seen succeed across 15+ competitions.</p>
+      </div>
+      <div class="res-card">
+        <span class="pill">Template</span>
+        <h4>A winning pitch deck template</h4>
+        <p>The actual template, ready to fill in — built on what consistently places.</p>
+      </div>
+      <div class="res-card">
+        <span class="pill">Checklist</span>
+        <h4>Must-have documents for early-stage startups</h4>
+        <p>The paperwork founders almost always discover too late they needed.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= COMMUNITY ================= -->
+<section id="community" class="section bg-cream on-cream">
+  <div class="wrap">
+    <div class="community-card on-navy reveal">
+      <div>
+        <div class="wa-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 21l1.5-4.5A8 8 0 1 1 8 19.5L3 21z"/></svg>
+        </div>
+        <p class="eyebrow">Community — free</p>
+        <h2>Opportunities don't wait. Neither should you hear about them late.</h2>
+        <p>A free WhatsApp space where I share competitions, grants, and accelerator calls; the moment I find them, no catch.</p>
+        <div style="margin-top:28px;">
+          <a class="btn btn-solid btn-highlight" href="https://chat.whatsapp.com/E5XU9qSFx0BIbHXU8HlhJ6" target="_blank" rel="noopener">Join the WhatsApp community →</a>
+        </div>
+      </div>
+      <div class="opp-preview">
+        <div class="opp-row">
+          <span class="opp-title">Startup Competition Opportunity</span>
+          <span class="opp-sub">National pitch competitions and application deadlines, shared the moment they open.</span>
+        </div>
+        <div class="opp-row">
+          <span class="opp-title">Funding &amp; Grant Alerts</span>
+          <span class="opp-sub">Seed grants, accelerator calls, and funding windows worth applying to.</span>
+        </div>
+        <div class="opp-row">
+          <span class="opp-title">Founder Resources</span>
+          <span class="opp-sub">Templates, frameworks, and tools shared directly with the group.</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SPEAKING ================= -->
+<section id="speaking" class="section bg-navy on-navy">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="eyebrow">Speaking</p>
+      <h2>I'll bring the room something they can actually use.</h2>
+      <p>Sessions for students and early founders, practical, specific, grounded in what's currently working in Pakistan's ecosystem.</p>
+    </div>
+    <div class="reveal">
+      <p style="opacity:.82; max-width:560px; font-size:15.5px; margin-bottom:10px;">Previously led a session for 80+ university students; several later sought one-on-one mentorship. Also mentored 10+ teams as a Bahria Incubation Center hackathon mentor.</p>
+    </div>
+    <div class="topics-grid reveal">
+      <div class="topic-row"><span class="n">01</span>From idea to first traction</div>
+      <div class="topic-row"><span class="n">02</span>How to pitch like you've already won the room</div>
+      <div class="topic-row"><span class="n">03</span>Lessons from 15+ competitions: what judges score</div>
+      <div class="topic-row"><span class="n">04</span>Building in Pakistan — funding paths and where to start</div>
+    </div>
+    <div style="margin-top:40px;">
+      <a class="btn btn-solid btn-highlight" href="#contact">Request a speaking session</a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= BLOG ================= -->
+<section id="blog" class="section bg-cream on-cream">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="eyebrow">Blog</p>
+      <h2>Notes from the ground, not the textbook.</h2>
+    </div>
+    <div class="blog-stub reveal">
+      <h3>First posts coming soon</h3>
+      <p>What I'm learning building ZapLock, mentoring founders, and watching Pakistan's startup ecosystem up close — written as it happens, not polished after the fact.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section id="contact" class="section bg-navy on-navy">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="eyebrow">Contact</p>
+      <h2>Have something specific in mind?</h2>
+      <p>For partnerships, press, or speaking requests — anything that doesn't fit neatly into a booking link.</p>
+    </div>
+    <div class="contact-grid reveal">
+      <div>
+        <div class="form-msg success" id="formSuccess">Thanks — your message is in. I'll get back to you soon.</div>
+        <div class="form-msg error" id="formError">Something went wrong sending that. Try again, or email me directly below.</div>
+
+        <!-- Formspree form configured — submissions deliver to your email -->
+        <form id="contactForm" action="https://formspree.io/f/mjgqbeow" method="POST">
+          <!-- honeypot field for basic spam protection -->
+          <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+          <div class="field"><label>Name</label><input type="text" name="name" placeholder="Your name" required></div>
+          <div class="field"><label>Email</label><input type="email" name="email" placeholder="you@example.com" required></div>
+          <div class="field">
+            <label>What's this about?</label>
+            <select name="topic">
+              <option>Partnership</option>
+              <option>Press</option>
+              <option>Speaking request</option>
+              <option>General question</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="field"><label>Message</label><textarea name="message" placeholder="Tell me a bit more..." required></textarea></div>
+          <button class="btn btn-solid" type="submit" id="formSubmitBtn">Send message</button>
+        </form>
+      </div>
+
+      <div class="contact-direct">
+        <a href="https://chat.whatsapp.com/E5XU9qSFx0BIbHXU8HlhJ6" target="_blank" rel="noopener">WhatsApp community →</a>
+        <a href="https://cal.com/muhammad-hassan-sqb3gb/one-on-one-founder-session" target="_blank" rel="noopener">Book a call →</a>
+        <a href="mailto:hasan.zaplock@gmail.com">hasan.zaplock@gmail.com →</a>
+
+        <div>
+          <p class="connect-title">Connect with me</p>
+          <div class="connect-list">
+            <a class="connect-card" href="https://www.linkedin.com/in/the-hassan/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              <span class="icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4V8h4v1.5A6 6 0 0 1 16 8z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></span>
+              <span class="meta"><span class="platform">LinkedIn</span><span class="handle">@the-hassan</span></span>
+              <span class="arrow">→</span>
+            </a>
+            <a class="connect-card" href="https://www.instagram.com/blog.by_hasan/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+              <span class="icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg></span>
+              <span class="meta"><span class="platform">Instagram</span><span class="handle">@blog.by_hasan</span></span>
+              <span class="arrow">→</span>
+            </a>
+            <a class="connect-card" href="mailto:hasan.zaplock@gmail.com" aria-label="Email">
+              <span class="icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 6 10 7 10-7"/></svg></span>
+              <span class="meta"><span class="platform">Email</span><span class="handle">hasan.zaplock@gmail.com</span></span>
+              <span class="arrow">→</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="bg-cream on-cream">
+  <div class="wrap footer-inner">
+    <span>© 2026 Hassan. Founder, ZapLock.</span>
+    <span>Built with one free call at a time.</span>
+  </div>
+</footer>
+
+<script>
+  // mobile nav
+  const burgerBtn = document.getElementById('burgerBtn');
+  const navLinks = document.getElementById('navLinks');
+  burgerBtn.addEventListener('click', () => navLinks.classList.toggle('mobile-open'));
+  navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => navLinks.classList.remove('mobile-open')));
+  document.addEventListener('click', (e) => {
+    if(window.innerWidth <= 980 && !e.target.closest('.nav-cta') && !e.target.closest('.links')){
+      navLinks.classList.remove('mobile-open');
+    }
+  });
+
+  // ticker content (duplicated for seamless loop)
+  const tickerItems = [
+    "15+ competitions entered","10+ top positions","Rs 1,000,000 seed funding",
+    "Top 20 / 400+ — Accelerate Punjab","ICF acceleration partner","Bahria Incubation Center",
+    "150+ founders mentored","80+ students reached"
+  ];
+  const track = document.getElementById('tickerTrack');
+  let tickerHtml = '';
+  for(let i=0;i<2;i++){ tickerItems.forEach(t => { tickerHtml += `<div class="ticker-item"><span class="dot"></span>${t}</div>`; }); }
+  track.innerHTML = tickerHtml;
+
+  // scroll reveal
+  const revealEls = document.querySelectorAll('.reveal');
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if(entry.isIntersecting){ entry.target.classList.add('is-visible'); io.unobserve(entry.target); }
+    });
+  }, { threshold: 0.15 });
+  revealEls.forEach(el => io.observe(el));
+
+  // count-up stats
+  const countEls = document.querySelectorAll('.stat-num');
+  const countIO = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if(entry.isIntersecting){
+        const el = entry.target;
+        const target = parseInt(el.getAttribute('data-count'), 10);
+        const suffix = el.getAttribute('data-suffix') || '';
+        const duration = 1400;
+        const start = performance.now();
+        const tick = (now) => {
+          const progress = Math.min((now - start) / duration, 1);
+          const eased = 1 - Math.pow(1 - progress, 3);
+          el.textContent = Math.round(eased * target) + suffix;
+          if(progress < 1) requestAnimationFrame(tick);
+        };
+        requestAnimationFrame(tick);
+        countIO.unobserve(el);
+      }
+    });
+  }, { threshold: 0.4 });
+  countEls.forEach(el => countIO.observe(el));
+
+  // achievements gallery
+  (function(){
+    const slides = document.querySelectorAll('.gallery-slide');
+    const countEl = document.getElementById('galleryCount');
+    const prevBtn = document.getElementById('galleryPrev');
+    const nextBtn = document.getElementById('galleryNext');
+    const track = document.getElementById('galleryTrack');
+    let idx = 0;
+
+    function show(i){
+      slides[idx].classList.remove('active');
+      idx = (i + slides.length) % slides.length;
+      slides[idx].classList.add('active');
+      countEl.textContent = idx + 1;
+    }
+    prevBtn.addEventListener('click', () => show(idx - 1));
+    nextBtn.addEventListener('click', () => show(idx + 1));
+
+    // touch swipe
+    let touchStartX = 0;
+    track.addEventListener('touchstart', (e) => { touchStartX = e.changedTouches[0].screenX; }, { passive:true });
+    track.addEventListener('touchend', (e) => {
+      const delta = e.changedTouches[0].screenX - touchStartX;
+      if(Math.abs(delta) > 40){ delta < 0 ? show(idx + 1) : show(idx - 1); }
+    }, { passive:true });
+  })();
+
+  // contact form (Formspree AJAX)
+  (function(){
+    const form = document.getElementById('contactForm');
+    const successMsg = document.getElementById('formSuccess');
+    const errorMsg = document.getElementById('formError');
+    const submitBtn = document.getElementById('formSubmitBtn');
+
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      successMsg.classList.remove('show');
+      errorMsg.classList.remove('show');
+      const originalText = submitBtn.textContent;
+      submitBtn.textContent = 'Sending...';
+      submitBtn.disabled = true;
+
+      try{
+        const response = await fetch(form.action, {
+          method: 'POST',
+          body: new FormData(form),
+          headers: { 'Accept': 'application/json' }
+        });
+        if(response.ok){
+          successMsg.classList.add('show');
+          form.reset();
+        } else {
+          errorMsg.classList.add('show');
+        }
+      } catch(err){
+        errorMsg.classList.add('show');
+      } finally {
+        submitBtn.textContent = originalText;
+        submitBtn.disabled = false;
+      }
+    });
+  })();
+</script>
+
+</body>
+</html>
